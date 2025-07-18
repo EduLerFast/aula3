@@ -8,10 +8,10 @@ horas_trabalho= float (input  ('quantas horas voce trabalha no mes?:'))
 salariobruto=ganho_hora * horas_trabalho
 
 #desconstos
-salariodescontadoimpostoderenda=(  salariobruto * 0.11 )
-salariodescontadoinss= ( salariobruto * 0.08)
-salariodescontadosindicato= (salariobruto * 0.05)
+salariodescontadoimpostoderenda=( 89 % salariobruto )
+salariodescontadoinss= (92% salariobruto)
+salariodescontadosindicato=(95% salariobruto)
 
 salarioliquido= (salariobruto - salariodescontadoimpostoderenda - salariodescontadoinss - salariodescontadosindicato )
 
-print (f' salario bruto: {salariobruto:.2f} R$ IR (11%) : R$ INSS (8%) R$ Sindicato (5%) :R$ Salario Liquido {salarioliquido:.2f} ')
+print (f' salario bruto: {salariobruto} R$ IR (11%) : R$ INSS (8%) R$ Sindicato (5%) :R$ Salario Liquido {salarioliquido} ')
