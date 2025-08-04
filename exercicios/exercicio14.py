@@ -7,5 +7,8 @@ peso=50
 levou= float (input('quantos quilos de peixe voce levou?:'))
 excesso=(levou%peso)
 multa= (excesso * 4)
-print (f'voce levou {excesso} quilos de peixe em excesso')
-print (f'pague a multa de R${multa}')
+if levou >= 50:
+ print (f'voce levou {excesso} quilos de peixe em excesso')
+ print (f'pague a multa de R${multa}')
+else:
+ print ('poucos peixes')
